@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_web.personas',
     'my_web.maestros',
-    'my_web.areamaestro'
+    'my_web.areamaestro',
+    'my_web.estudiantes',
+    'my_web.programaeducativo'
 ]
 
 MIDDLEWARE = [

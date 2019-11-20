@@ -6,4 +6,4 @@ class AreaMaestro(models.Model):
     area = models.CharField(max_length=50, blank=False, null=False)
     
     def __str__(self):
-        return "{} {}".format(self.area)
+        return "{}".format(self.area)

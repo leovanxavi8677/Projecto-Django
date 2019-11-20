@@ -38,4 +38,4 @@ class Persona(models.Model):
     
 
     def __str__(self):
-        return "{} {}".format(self.nombre, self.apellidoPaterno,self.apellidoMaterno)
+        return "{} {} {}".format(self.nombre, self.apellidoPaterno,self.apellidoMaterno)
