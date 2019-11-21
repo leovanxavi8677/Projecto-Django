@@ -29,12 +29,12 @@ class Persona(models.Model):
     nombre = models.CharField(max_length=60, null=False, blank=False)
     apellidoPaterno = models.CharField(max_length=50, null=False, blank=False)
     apellidoMaterno = models.CharField(max_length=50, null=False, blank=False)
-    fechaNacimiento = models.DateTimeField(null=False, blank=False)
+    fechaNacimiento = models.DateField(null=False, blank=False)
     edad = models.IntegerField(blank=False)
-    nivelEstudios = models.CharField(max_length=1,null=False,blank=False,choices=ESTUDIOS_CHOICES)
-    genero = models.CharField(max_length=1,null=False,blank=False,choices=GENERO_CHOICES)
-    nivelAcceso=models.CharField(max_length=1,null=False,blank=False,choices=NIVEL_ACCESO_CHOICES)
-    passwd=models.CharField(max_length=150,blank=False,null=False)
+    nivelEstudios = models.CharField(max_length=1, null=False, blank=False, choices=ESTUDIOS_CHOICES)
+    genero = models.CharField(max_length=1, null=False, blank=False, choices=GENERO_CHOICES)
+    nivelAcceso = models.CharField(max_length=1, null=False, blank=False, choices=NIVEL_ACCESO_CHOICES)
+    passwd = models.CharField(max_length=150, blank=False, null=False)
     
 
     def __str__(self):

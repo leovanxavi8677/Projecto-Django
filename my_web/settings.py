@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'my_web.maestros',
     'my_web.areamaestro',
     'my_web.estudiantes',
-    'my_web.programaeducativo'
+    'my_web.programaeducativo',
+    'my_web.areaestudiomateria',
+    'my_web.materias',
+    'my_web.grupos'
 ]
 
 MIDDLEWARE = [

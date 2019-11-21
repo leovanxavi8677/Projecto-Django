@@ -11,9 +11,9 @@ ESTATUS_CHOICES = [
 
 class Maestro(Persona):
     cubiculo = models.CharField(max_length=50, blank=False, null=False)
-    numeroTrabajdor = models.CharField(max_length=13, blank=False, null=False)
-    estatus = models.CharField(max_length=2, blank=False, null=False)
+    numeroTrabajador = models.CharField(max_length=13, blank=False, null=False)
+    estatus = models.CharField(max_length=2, blank=False, null=False,choices=ESTATUS_CHOICES)
     areaExpertise = models.ForeignKey(AreaMaestro,help_text="Seleccione un Área",related_name="maestroAreaExpertise",on_delete=models.CASCADE,null=True)
     
     def __str__(self):
-        return "{} {} {}".format(self.cubiculo, self.numeroTrabajdor,self.estatus)
+        return "{} {} {}".format(self.cubiculo, self.numeroTrabajador, self.estatus)
